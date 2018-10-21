@@ -1,2 +1,2 @@
 # tsarabadzhiyska.github.io
-Simple website Mural Art Academy 
+Simple website for Mural Art Academy 
