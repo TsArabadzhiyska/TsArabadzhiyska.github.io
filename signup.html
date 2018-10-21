@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="muralstyles.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="forms.css">
+	<link rel="stylesheet" type="text/css" href="aboutmaastyle.css">
+	<link rel="shortcut icon" href="http://www.nhglavrenov.bg/assets/images/favicon.png">
+
+	
+</head>
+<body>
+	<nav id="before-header-nav">
+	
+		  <ul class="socials">
+
+			<li><a href="https://www.facebook.com/nhglavrenov/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.youtube.com/watch?v=8-XLpCT0MPY&t=3s"><i class="fa fa-youtube"></i></a></li>
+		    <li><a id="education" href="signup.html"><i class="fa fa-graduation-cap"></i></a></li>
+
+		    <li><a href="http://www.nhglavrenov.bg/"><i class="fa fa-paint-brush"></i></a></li>
+		    
+
+		  </ul>
+		<ul id="before-header-nav-ul">
+			
+			<li><a href="contacts.html">Contacts</a></li>
+			
+			<li><a href="signup.html">Signup</a></li>
+		</ul>
+	</nav>
+	<header>
+		
+		<nav id="after-first-nav-nav">
+			<img src="images/logo_nhg.png" alt="logo">
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutmaa.html">About</a></li>
+				<li><a href="teachers.html">Teachers</a></li>
+			    <li><a href="practices.html">Practices</a></li>
+				<li><a href="solarti.html">Solarti</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="" method="post" name="regform">
+		  <div class="container">
+		    <h3>Sign Up</h3>
+		    <p>Please fill in this form to create an account.</p>
+		    <hr>
+		    <label for="fname"><b>Name</b></label>
+		      <p style="color: red;" id="fname-error"></p>
+		    <input type="text" placeholder="First" id="fname" name="fname" class="text-field" required>
+
+		    <p style="color: red;" id="lname-error"></p>
+ 			<input type="text" placeholder="Last" id="lname" name="lname" class="text-field">
+	
+		    <label for="email"><b>Email</b></label>
+		    <p style="color: red;" id="email-error"></p>
+		    <input type="text" placeholder="Enter Email" id="email" name="email" class="text-field" >
+
+			<label for="phone"><b>Telephone Number</b></label>
+		    <p style="color: red;" id="phone-error"></p>
+		    <input type="text" placeholder="Enter your Number" id="phone" name="phone" class="text-field" >
+
+		    <label for="psw"><b>Password</b></label>
+		    <p style="color: red;" id="psw-error"></p>
+		    <input type="password" placeholder="Enter Password" id="psw"name="psw" class="text-field">
+
+		    <label for="psw-repeat"><b>Repeat Password</b></label>
+		    <p style="color: red;" id="rpsw-error"></p>
+		    <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat" class="text-field" >
+
+		    <label><b>Birthday</b></label>
+		    <br>
+		    <p style="color: red;" id="day-error"></p>
+		    <p style="color: red;" id="year-error"></p>
+		    <select id="month" class="text-field">
+				<option value="January">January</option>
+				<option value="Febuary">Febuary</option>
+				<option value="March">March</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+				<option value="June">June</option>
+				<option value="July">July</option>
+				<option value="August">August</option>
+				<option value="September">September</option>
+				<option value="October">October</option>
+				<option value="November">November</option>
+				<option value="December">December</option>
+			</select>
+
+			<input type="number" min="1" max="31" name="DOBDay" id="bdayday" placeholder="0" class="text-field" >
+				
+			<input type="number" min="1918" max="2018" name="DOBYear" id="byear" placeholder="0" class="text-field" >
+
+
+		    <label for="gender"><b>Gender</b></label>
+		    <label id="gend-label">
+			<select id="gender" class="text-field">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+		    </label>
+		    <div id="check">
+				<input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
+				<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+			</div>
+		    <div class="clearfix"> 
+		    <p style="color: red;" id="form-errors"></p>
+		      <button type="button" class="cancelbtn" onclick="window.location.href='index.html'" >Cancel</button>
+		      <button type="submit" class="signupbtn" onclick="return Register()">Sign Up</button>
+		     
+		    </div>
+		  </div>
+		</form>
+	</main>
+	<footer>
+	<section>
+		<h5>CONTACTS:</h5>
+	    <ul>
+	    	<li>Plovdiv Yanko Sakazov St 2A</li>
+	    	<li> +032 960 067</li>
+	    	<li>nhg_lavrenov_plovdiv@abv.bg</li>
+	    	<li>nhg-lavrenov@gmail.com</li>
+	    </ul>
+	</section>
+	<section>
+		<h5>COURSES</h5>
+		<ul>
+	    	<li>Antient techniques of mosaic</li>
+	    	<li>Glass painting and design</li>
+	    	<li>Mosaics' course at "Tsanko Lavrenov"</li>
+	    	<li>The history of Fresco</li>
+	    </ul>
+	</section>
+	<section>
+		<h5>RESOURSES</h5>
+  		<ul>
+	    	<li>National Art High School "Tsanko Lavrenov"</li>
+	    	<li>Natonal Art Galery Plovdiv</li>
+	    	<li>Cultural Center "The White House"</li>
+	    	<li>The Small Basilica of Philippopolis</li>
+	    </ul>
+	</section>
+	<section><h5>SOCIAL MEDIA</h5>
+	 	<ul class="socials">
+
+			<li><a href="https://www.facebook.com/nhglavrenov/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.youtube.com/watch?v=8-XLpCT0MPY&t=3s"><i class="fa fa-youtube"></i></a></li>
+		    <li><a href="#"><i class="fa fa-graduation-cap"></i></a></li>
+		    <li><a href="http://www.nhglavrenov.bg/"><i class="fa fa-paint-brush"></i></a></li>
+		  </ul>
+		  </section>
+</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="formvalidation.js"></script>
+	<script>
+		$(document).ready(
+			function () {
+		 		$(".text-field").focus(function () {
+			 	 	$(this).css('font-size', '14px');
+			 	 	$(this).css('background-color','#FFF');
+				});
+				$(".text-field").blur(function () {
+              	    $(this).css("background-color","#F1F1F1");
+	                $(this).css("border-radius", "6px");
+	                $(this).css("border", "1px solid #dadada");
+	                $(this).css('font-size', '12px');
+           		});
+			}
+		);		
+	</script>
+</body>
+</html>
